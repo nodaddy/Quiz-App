@@ -1,0 +1,21 @@
+#pc {
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+#pcbg {
+    background-color: black;
+    height: 70px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#pp {
+    border-radius: 50%;
+    width: 40%;
+    margin-top: -50px;
+}
+
+#profilePara {
+    color: silver;
+}
