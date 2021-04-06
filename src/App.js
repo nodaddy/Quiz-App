@@ -6,6 +6,8 @@ import PostContainer from './components/post/PostContainer';
 import {Row, Col} from 'antd';
 
 import 'antd/dist/antd.css';
+import PostCreator from './components/post/PostCreator';
+import CommentsContainer from './components/CommentsContainer';
 
 function App() {
   return (
@@ -19,14 +21,14 @@ function App() {
         </Col>
 
         <Col span={12} style={{padding: '20px'}}>
-          Post Creator
+          <PostCreator/>
           <br/>  
           <br/>
           <PostContainer/>  
         </Col>
 
         <Col span={5}>
-          Comments
+          <CommentsContainer/>
         </Col>
 
         <Col span={1}></Col>

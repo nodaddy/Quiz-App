@@ -21,7 +21,7 @@ export default function NavigationBar(){
                 <Col span={2}>Messages</Col>
                 <Col span={2} style={{borderRight:'1px solid grey'}}>Notif.</Col>
                 <Col span={2}>try pre.</Col>
-                <Col span={1}></Col> 
+                <Col span={1}></Col>  
             </Row> 
     )
 }
