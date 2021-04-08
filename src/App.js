@@ -8,31 +8,20 @@ import {Row, Col} from 'antd';
 import 'antd/dist/antd.css';
 import PostCreator from './components/post/PostCreator';
 import CommentsContainer from './components/CommentsContainer';
+import CardComp from './components/cardComp';
+
+
 
 function App() {
+  const arr = ["fsefss", "llp", "fsfs"];
   return (
     <div className="App">
       <NavigationBar/>  
+      <CardComp studentName="Neelesh" classs="12" rollNo="33" anyName={true}/>
       <br/>
-      <Row>
-        <Col span={1}></Col>
-        <Col span={5}>
-          <ProfileCard/>
-        </Col>
+      <CardComp studentName="person2" classs="12ikdfsbi" rollNo="r34w53q33" anyName={false}/>
+  
 
-        <Col span={12} style={{padding: '20px'}}>
-          <PostCreator/>
-          <br/>  
-          <br/>
-          <PostContainer/>  
-        </Col>
-
-        <Col span={5}>
-          <CommentsContainer/>
-        </Col>
-
-        <Col span={1}></Col>
-      </Row>
     </div>
   );
 }
