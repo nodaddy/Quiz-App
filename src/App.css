@@ -3,6 +3,18 @@
   //background-color: #f3f2ef;
 }
 
+.optiondiv {
+  padding:10px;
+  width:50%;
+  border: 2px inset silver;
+}
+
+.optiondiv:hover {
+  cursor: pointer;
+  background-color: rgb(105, 105, 2);
+  color:white;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

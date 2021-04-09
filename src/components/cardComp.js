@@ -5,7 +5,7 @@ export default class CardComp extends Component{
     render(){
     return (
         <div style={{width:'200px', backgroundColor:'maroon', color:'white'}}>
-            question: {props.questionBody}
+            question: {this.props.questionBody}
             <br/>
             std : {this.props.classs}
             <br/>
