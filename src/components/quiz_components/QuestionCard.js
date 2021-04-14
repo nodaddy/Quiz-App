@@ -24,7 +24,7 @@ export default function QuestionCard(props){
                             }
                         }}
                         style={{margin:'10px'}}>
-                            {props.options[0].answerText}
+                            {props.options[0].isCorrect}
                         </div>
 
 

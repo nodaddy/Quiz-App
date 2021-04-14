@@ -16,13 +16,13 @@ export default function Quiz(props){
     const [score, setScore] = useState(0); 
 
     return (
-        <div>
+        <div align="center">
             <h1>Quiz</h1>
             <br/>
             <br/>
             {
                 quizData.length != 0 ? quizData.map((ques)=>{ 
-                   return <Row>
+                   return <Row id={`${ques.question}`}>
             <Col xs={{span:0}} lg={{span:2}}></Col>
             <Col xs={{span:24}} lg={{span:20}} align="center">
                 <Card title={`${ques.index}. ${ques.question}`} style={{width:'70%',padding:'30px',margin:'40px', backgroundColor:'antiquewhite'}}> 
@@ -38,6 +38,10 @@ export default function Quiz(props){
                                 e.target.style.backgroundColor = 'red';
                                 e.target.style.color = 'white';
                             }
+                            setTimeout(()=>{
+                                document.getElementById(ques.question).style.display = 'none';
+                            }, 400)
+
                         }}
                         style={{margin:'10px'}}>
                             {ques.answerOptions[0].answerText}
@@ -58,6 +62,9 @@ export default function Quiz(props){
                                 e.target.style.backgroundColor = 'red';
                                 e.target.style.color = 'white';
                             }
+                            setTimeout(()=>{
+                                document.getElementById(ques.question).style.display = 'none';
+                            }, 400)
                         }}
                         style={{margin:'10px'}}>
                             {ques.answerOptions[1].answerText}
@@ -78,6 +85,9 @@ export default function Quiz(props){
                                 e.target.style.backgroundColor = 'red';
                                 e.target.style.color = 'white';
                             }
+                            setTimeout(()=>{
+                                document.getElementById(ques.question).style.display = 'none';
+                            }, 400)
                         }}
                         style={{margin:'10px'}}>
                             {ques.answerOptions[2].answerText}
@@ -98,6 +108,9 @@ export default function Quiz(props){
                                 e.target.style.backgroundColor = 'red';
                                 e.target.style.color = 'white';
                             }
+                            setTimeout(()=>{
+                                document.getElementById(ques.question).style.display = 'none';
+                            }, 400)
                         }}
                         style={{margin:'10px'}}>
                             {ques.answerOptions[3].answerText}
