@@ -14,7 +14,6 @@ import Quiz from './components/quiz_components/Quiz';
 
 
 function App() {
-  const arr = ["fsefss", "llp", "fsfs"];
   return (
     <div className="App">
       <Quiz/>
